@@ -2,9 +2,7 @@ import React from 'react'
 import { Text, View, TextInput,StyleSheet } from 'react-native'
 import {white,gray} from '../theme/ColorPallete'
 import {MyAppDefaultButton} from './common/MyAppDefaultButton'
-interface state {
-
-}
+import {ScreenContainer} from './common/ScreenContainer'
 
 export function AddDeckScreen() {
 
@@ -12,14 +10,14 @@ export function AddDeckScreen() {
     return (<View><Text>lala</Text></View>);}
 
     return (
-        <View>
+        <ScreenContainer>
         <Text style={styles.label}>What will you learn in this deck?</Text>
         <TextInput
           style={styles.input}
           value="implement it"
           placeholder="e.g. Algebra"
         />
-      </View>
+      </ScreenContainer>
     );
 }
 
